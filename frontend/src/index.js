@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
-class Root extends React.Component {
+import { List } from './List/List';
+
+class App extends React.Component {
     render() {
         return(
-            <div className="root">
+            <div className="app">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+                <List />
             </div>
         );
     }
 }
 
 ReactDOM.render(
-    <Root />,
+    <App />,
     document.getElementById('root')
 );
